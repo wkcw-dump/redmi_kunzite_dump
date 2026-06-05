@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MIUI ADD: Modem_ModemEnhance -->
+<MESubFeatureConfig>
+    <!--CN -->
+    <!-- device_name = ro.product.device -->
+    <deviceConfig device_name="kunzite">
+        <!-- hwc_name = ro.boot.hwc -->
+        <hwc hwc_name="CN" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <feature feature_id="8" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="9" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="10" hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+    </deviceConfig>
+
+    <!--India -->
+    <!-- device_name = ro.product.device -->
+    <deviceConfig device_name="kunzite">
+        <!-- hwc_name = ro.boot.hwc -->
+        <hwc hwc_name="India" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <feature feature_id="1" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="17" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+    </deviceConfig>
+
+    <!--Global -->
+    <!-- device_name = ro.product.device -->
+    <deviceConfig device_name="kunzite">
+        <!-- hwc_name = ro.boot.hwc -->
+        <hwc hwc_name="Global" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <feature feature_id="1" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="8"  hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="9"  hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="10"  hw_support="1" sw_version="1" sw_enable="1" sw_mp_enable="1"/>
+        <feature feature_id="17" hw_support="0" sw_version="1" sw_enable="0" sw_mp_enable="0"/>
+    </deviceConfig>
+
+    <!--default -->
+    <!-- device_name = ro.product.device -->
+    <deviceConfig device_name="kunzite">
+        <!-- hwc_name = ro.boot.hwc -->
+        <hwc hwc_name="default" />
+        <!-- feature_id refer to MEFeatureConfig.MEFEATURE_TYPE_ID_XXX -->
+        <feature feature_id="1" hw_support="0"  sw_enable="0" sw_mp_enable="0"/>
+        <feature feature_id="17" hw_support="0"  sw_enable="0" sw_mp_enable="0"/>
+    </deviceConfig>
+</MESubFeatureConfig>
+<!-- END Modem_ModemEnhance -->
