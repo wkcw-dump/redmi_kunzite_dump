@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameter>
+  <item name="Config">
+    <!--value = 0x90000 + 7001-->
+    <param key="QCRIL_OEM_HOOK_REQID" value="544289"/>
+    <param key="SupportPSNNV"         value="6855"/>
+    <param key="SupportSingleSIM"    value="true"/>
+    <param key="SupportTP"    value="true"/>
+    <param key="Supportmodem"    value="true"/>
+    <param key="SupportFM"    value="false"/>
+    <param key="SupportNormal"    value="false"/>
+    <param key="SupportPD"    value="true"/>
+    <param key="SupportUSFID"    value="true"/>
+    <param key="SupportFLASHLIGHT"    value="true"/>
+    <param key="SupportDualSar"    value="true"/>
+    <param key="SupportLightSensor"    value="true"/>
+    <param key="SupportEsim"    value="false"/>
+    <param key="UseDefaultSarSensorTool"    value="false"/>
+    <param key="SupportPowerKey" value="true"/>
+    <param key="SupportESE" value="false"/>
+    <param key="SupportPenTest" value="false"/>
+    <param key="ConnectorType" value="Type-C"/>
+    <param key="TP_60HZ_Path" value="service call SurfaceFlinger 31117 i32 60"/>
+    <param key="SupportSarType" value="33171015"/>
+    <param key="SupportSarType2" value="33171028"/>
+    <param key="SupportUnderScreenFingerprint" value="true"/>
+    <param key="SupportFingerprintCAL"    value="true"/>
+    <param key="HideMenuIdNames" value="gyroscope_cal"/>
+    <param key="SupportTypeC" value="true"/>
+  </item>
+  <item name="LightSensor">
+    <param key="SCREENBRIGHTNESSSETTINGSMAXIMUM" value="16383"/>
+  </item>
+  <item name="Camera">
+    <param key="TwinCameraType" value="switch"/>
+    <param key="isSupportQvga" value="false"/>
+  </item>
+  <item name="Charge">
+    <param key="SupportCurrent" value="true"/>
+    <param key="SupportFastCharge" value="false"/>
+    <param key="battery_low" value="50"/>
+    <param key="battery_high" value="80"/>
+    <param key="BatteryIdPath" value="/sys/class/qcom-battery/resistance_id"/>
+    <param key="SupportPDChargeType" value="PD_PPS"/>
+    <param key="BatteryInfo" value="true"/>
+    <param key="BatteryMaxCurrent" value="4000000"/>
+    <param key="BatteryMinCurrent" value="700000"/>
+    <param key="ISSpportbattery" value="true"/>
+    <param key="ChargeCC" value="/sys/class/qcom-battery/typec_cc_orientation"/>
+    <param key="ChargeTYPE" value="sys/class/qcom-battery/real_type"/>
+    <param key="ChargeISNS" value="/sys/class/qcom-battery/cp_bus_current"/>
+    <param key="Battery" value="/sys/class/qcom-battery/authentic"/>
+    <param key="ChargeTypeMode" value="/sys/class/qcom-battery/typec_mode"/>
+    <param key="PD_PPS_TYPE" value="PD_PPS"/>
+    <param key="Source" value="/sys/class/qcom-battery/source"/>
+    <param key="InCharge" value="echo 0 > /sys/class/qcom-battery/input_suspend"/>
+    <param key="OutCharge" value="echo 1 > /sys/class/qcom-battery/input_suspend"/>
+  </item>
+  <item name="SecretCode">
+    <param key="WifiLogVer" value="V2"/>
+    <param key ="DiagMode" value="diag,adb"/>
+  </item>
+  <item name="LED">
+    <param key="hasBacklight" value="true"/>
+    <param key="hasWhiteLED" value="false"/>
+    <param key="hasRedLED" value="false"/>
+    <param key="hasGreenLED" value="false"/>
+    <param key="hasBlueLED" value="false"/>
+    <param key="hasBackTorch" value="true"/>
+    <param key="hasBackTorch2" value="false"/>
+    <param key="hasFrontTorch1" value="false"/>
+    <param key="hasBackTorch1_2" value="false"/>
+    <param key="hasKeyLED" value="false"/>
+
+  </item>
+  <item name="SAR_SENSOR">
+    <param key="SarFactoryEnable" value="false"/>
+  </item>
+  <item name="SoftVersion">
+    <param key="ShowIFAA" value="true"/>
+    <param key="ShowFIDO" value="false"/>
+    <param key="ShowWidevine" value="false"/>
+    <param key="ShowKeybox" value="true"/>
+    <param key="isShowPaInformation" value="true"/>
+    <param key="PaInformationFile" value="/sys/android_audio/audio_pa"/>
+    <param key="LCMInfoPath"  value="/sys/class/mi_display/disp-DSI-0/panel_info"/>
+    <param key="InterceptionBatteries" value="false"/>
+    <param key="Batterypath"  value="/sys/class/qcom-battery/batt_manufacturer"/>
+    <param key="isShowAudioSwitch" value="true"/>
+    <param key="AudioSwitchPath"  value="/sys/android_audio/audio_switch"/>
+    <param key="ShowBatteryinfo"  value="false"/>
+    <param key="SupportCamera" value="wide,front,depth"/>
+  </item>
+  <item name="AutoTest">
+    <param key="memoryInfo" value="false"/>
+    <param key="unsupport_items" value="TEST_UWB, TEST_ESIMCARD, TEST_LEDLIGHT, DIAG_STABILITY, TEST_BATCON, TEST_FRONTFLASH, TEST_WIRELESS_CHARGER, TEST_AUX_MIC_TO_EARPIECE, TEST_BACKMIC_TO_EARPIECE, TEST_LOUDSPEAKERPACALIBRATION, TEST_MODEMHARDWARE, TEST_CAMERAHARDWARE, DACA_CAMOTP"/>
+    <param key="camera_param" value="WIDE,FRONT,DEPTH"/>
+    <param key="depthname" value="DEPTH"/>
+    <param key="mainname" value="WIDE"/>
+    <param key="frontname" value="FRONT"/>
+    <param key="isShowCamCal" value="true"/>
+    <param key="suport_camera_fuseid" value="true"/>
+    <param key="camera_fuseid_list" value="rearMain,frontMain,rearDepth"/>
+    <param key="isSupport_takeapart" value="true"/>
+  </item>
+
+ <item name="SarsensorDiff">
+    <param key="main_max_low" value="16000"/>
+    <param key="main_max_high" value="44000"/>
+    <param key="sub_max_low" value="28000"/>
+    <param key="sub_max_high" value="58000"/>
+    <param key="side_max_low" value="18000"/>
+    <param key="side_max_high" value="41000"/>
+    <param key="main_basecup_max" value="208"/>
+    <param key="main_basecup_min" value="152"/>
+    <param key="main_refer_basecup_max" value="139"/>
+    <param key="main_refer_basecup_min" value="79"/>
+    <param key="side_refer_basecup_max" value="68"/>
+    <param key="side_refer_basecup_min" value="36"/>
+    <param key="side_basecup_max" value="108"/>
+    <param key="side_basecup_min" value="76"/>
+    <param key="sub_basecup_max" value="109"/>
+    <param key="sub_basecup_min" value="77"/>
+    <param key="main_far_status_value_comparation" value="3000"/>
+    <param key="main_near_status_value_comparation" value="3000"/>
+    <param key="sub_far_status_value_comparation" value="3000"/>
+    <param key="sub_near_status_value_comparation" value="3000"/>
+    <param key="side_far_status_value_comparation" value="2500"/>
+    <param key="side_near_status_value_comparation" value="2500"/>
+    <param key="Sar_cal" value="true"/>
+    <param key="isShowSarToolTyhx" value="true"/>
+    <param key="isSupportSarSensorTool" value="true"/>
+  </item>
+
+  <item name="FPSelf">
+    <param key="selfenrollmerge" value="true"/>
+    <param key="GoodixCalibrateFile" value="true"/>
+  </item>
+
+  <item name="CPRamdump">
+    <param key="Cp_Ramdump" value="true"/>
+  </item>
+
+  <item name="NFC">
+    <param key="NFCCommand" value="tdt -n /dev/tms_nfc -b -f --swp_test=uicc1"/>
+    <param key="nfcoffer1" value="dev/tms_nfc"/>
+  </item>
+
+  <item name="SarNV">
+    <!--<param key="Test_Path"   value="/mnt/vendor/persist/rfs/msm/mpss/sarnv"/>-->
+    <param key="Test_Path"   value="/mnt/vendor/persist/rfs/msm/mpss"/>
+    <param key="Target_Path2" value="/vendor/rfs/msm/mpss/readonly/firmware/image/modem_pr/sarnv"/>
+    <param key="cmd" value="LctReadWriteNV rfset 4B000400"/>
+    <param key="compare" value="00029619,00030007,00029624"/>
+    <param key="Target_Path1" value="/sdcard/sarnv"/>
+    <param key="SarnvSupport" value="true"/>
+  </item>
+
+</parameter>

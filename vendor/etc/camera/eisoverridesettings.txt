@@ -1,0 +1,3 @@
+EISv2SetDependencies = 1
+EISv2DisableOIS = 0
+EISv3DisableOIS = 0

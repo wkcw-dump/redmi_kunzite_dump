@@ -1,0 +1,24 @@
+{
+    "config":{
+      "hw_platform": ["QRD"],
+      "soc_id": ["663", "613"]
+    },
+    "sar_algo_2": {
+      "owner": "sar_algo_2",
+      ".sar_config":{
+        "owner": "sar_algo_2",
+        "use_step": {
+          "ver": "0", "type": "flt", "data": "1"
+        },
+        "step_limit": {
+          "ver": "0", "type": "flt", "data": "100"
+        },
+        "threhold_cs2_min": {
+          "ver": "2", "type": "flt", "data": "2500"
+        },
+        "threhold_cs2_max": {
+          "ver": "2", "type": "flt", "data": "2500"
+        }
+      }
+    }
+  }

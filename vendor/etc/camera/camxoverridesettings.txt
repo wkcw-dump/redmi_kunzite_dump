@@ -1,0 +1,74 @@
+multiCameraLogicalXMLFile=kunzite.xml
+multiCameraEnable=TRUE
+
+torchCurrent=125
+snapshotTorchCurrent=320
+isPhyicalMultiCameraSupported=TRUE
+
+isVideoBeautifierSupported=TRUE
+enableBatteryEmergencyStrategy=1
+
+#remosaic&izs config Threshold
+AECInfoThresholdForISZ=24.0:999|24.0:999
+AECInfoThresholdForQCFA=1.05:1.05:999|1.05:1.05:999
+enableISZ=1
+
+invalidSOFThreshold=50
+
+# flush time
+nodeResponseTime=200
+sessionResponseTimePadding=300
+sessionMaxFlushWaitTime=1000
+
+# EIS
+isVideoStabilizationPreviewSupported=1
+
+# camera perform
+numberOfCHIThreads=7
+maxHalRequests=7
+ExternMaxIFEPipelineDelay=1
+DRQPriori=-20
+DRQBindBigCore=TRUE
+OPENBindBigCore=TRUE
+
+#Tripod checker
+tripodParameter=0.016|0.48|14|27
+
+# sanity
+halBufferMgrMode=0
+enableSignal35Tombstone=FALSE
+
+#AE Startup
+enableMinimumStartupExposure=FALSE
+
+#AF Indication
+disableFocusIndication=TRUE
+
+#disable BLM
+enableBLMClient=0
+
+#disable camera core dump
+enableCameraCoreDumpBinary=FALSE
+enableCameraCoreDumpText=FALSE
+
+#camera probe out
+numCameraProbe=3
+#enable early PCR
+numPCRsBeforeStreamOn=1
+
+#begin close camera log
+logRequestMapping=FALSE
+offlineLoggerEnableBackupLog=FALSE
+enableCameraCoreDumpBinary=FALSE
+enableCameraCoreDumpText=FALSE
+overrideLogLevels=0x01
+logWarningMask=0x00
+logCoreCfgMask=0x00
+logConfigMask=0x00
+logInfoMask=0x00
+enablechirecovery=FALSE
+#end close camera log
+
+#set face mode
+# AdaptiveGTM, GTM, LTM
+FDPreprocessing= AdaptiveGTM
