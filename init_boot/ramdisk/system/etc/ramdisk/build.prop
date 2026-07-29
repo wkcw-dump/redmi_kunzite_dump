@@ -1,0 +1,23 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.bootimage.brand=Redmi
+ro.product.bootimage.device=kunzite
+ro.product.bootimage.manufacturer=Xiaomi
+ro.product.bootimage.model=kunzite
+ro.product.bootimage.cert=kunzite
+ro.product.bootimage.marketname=kunzite
+ro.product.bootimage.name=kunzite
+ro.bootimage.build.date=Fri Jun 12 10:09:36 UTC 2026
+ro.bootimage.build.date.utc=1781258976
+ro.bootimage.build.fingerprint=Redmi/kunzite/kunzite:15/AQ3A.250129.001/OS3.0.302.0.WPQMIXM:user/release-keys
+ro.bootimage.build.id=AQ3A.250129.001
+ro.bootimage.build.tags=release-keys
+ro.bootimage.build.type=user
+ro.bootimage.build.version.incremental=OS3.0.302.0.WPQMIXM
+ro.bootimage.build.version.release=15
+ro.bootimage.build.version.release_or_codename=15
+ro.bootimage.build.version.sdk=35
+# end of file
+

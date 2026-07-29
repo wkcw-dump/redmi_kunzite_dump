@@ -1,0 +1,5 @@
+mcfg_hw/generic/common/Netrani/STANDALONE/LA/DSDS_CDMALess/mcfg_hw.mbn
+mcfg_hw/generic/common/Netrani/LCT/LA/CHN_DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/Netrani/LCT/LA/IND_DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/Netrani/LCT/LA/GLB_DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/Netrani/LCT/LA/GLB_SS/mcfg_hw.mbn

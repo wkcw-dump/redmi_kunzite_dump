@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cust_features>
+    <cust_feature>
+        <map name="cota_preinstall_apps_list">
+            <item name="com.instagram.android">1</item>
+            <item name="com.facebook.katana">1</item>
+        </map>
+        <string name="config_facebook_partnerid">vodafone:467ff1b4-cd51-4a99-b4ba-d93fc1ba508b</string>
+    </cust_feature>
+</cust_features>

@@ -1,0 +1,1 @@
+mcfg_hw/generic/common/Netrani/LCT/LA/GLB_DSDS/mcfg_hw.mbn

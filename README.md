@@ -1,0 +1,20 @@
+## missi-user 16 BP2A.250605.031.A3 16OS3.1.260612.175004099.QCPEGL.S release-keys
+- Manufacturer: xiaomi
+- Platform: parrot
+- Codename: kunzite
+- Brand: Redmi
+- Flavor: missi-user
+- Release Version: 16
+- Kernel Version: 6.6.77
+- Id: BP2A.250605.031.A3
+- Incremental: 16OS3.1.260612.175004099.QCPEGL.S
+- Tags: release-keys
+- CPU Abilist: arm64-v8a
+- A/B Device: true
+- Treble Device: true
+- Locale: en-GB
+- Screen Density: 450
+- Fingerprint: Redmi/kunzite/kunzite:15/AQ3A.250129.001/OS3.0.302.0.WPQMIXM:user/release-keys
+- OTA version: 
+- Branch: missi-user-16-BP2A.250605.031.A3-16OS3.1.260612.175004099.QCPEGL.S-release-keys
+- Repo: redmi_kunzite_dump
