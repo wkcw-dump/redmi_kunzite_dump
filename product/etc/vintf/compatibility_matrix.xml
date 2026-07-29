@@ -1,0 +1,100 @@
+<!--
+    Input:
+        device/xiaomi/kunzite/product/device_framework_compatibility_matrix/touchfeature/touch_framework_compatibility_matrix.xml
+        device/xiaomi/kunzite/product/device_framework_compatibility_matrix/mlipay/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/kunzite/product/device_framework_compatibility_matrix/idmanager/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/kunzite/product/device_framework_compatibility_matrix/vsimapp/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/kunzite/product/device_framework_compatibility_matrix/tidaservice/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/kunzite/product/device_framework_compatibility_matrix/mfidoca/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/kunzite/product/device_framework_compatibility_matrix/mtdservice/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/kunzite/product/device_framework_compatibility_matrix/otrpagent/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/kunzite/product/device_framework_compatibility_matrix/mpayjoyca/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/kunzite/product/device_framework_compatibility_matrix/miguardca/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/kunzite/product/nfc/hw/matrix/framework_compatibility_matrix.xml
+-->
+<compatibility-matrix version="9.0" type="framework">
+    <hal format="aidl">
+        <name>vendor.tms.tmsnfc_aidl</name>
+        <interface>
+            <name>ITmsNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.aidl.mtdservice</name>
+        <interface>
+            <name>IMTService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.aidl.tidaservice</name>
+        <interface>
+            <name>ITidaService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.idmanager</name>
+        <interface>
+            <name>IIdManagerService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.idmanager</name>
+        <interface>
+            <name>ISecidService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.mfidoca</name>
+        <interface>
+            <name>IFidoService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.miguardca</name>
+        <interface>
+            <name>IMiguardService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.mlipay</name>
+        <interface>
+            <name>IMlipayService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.mpayjoyca</name>
+        <interface>
+            <name>IPayjoyService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.otrpagent2</name>
+        <interface>
+            <name>IOTrPAgent</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.vsimapp</name>
+        <interface>
+            <name>IVSIMService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hw.touchfeature</name>
+        <interface>
+            <name>ITouchFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
