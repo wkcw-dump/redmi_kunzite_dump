@@ -1,0 +1,29 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD"],
+    "soc_id": ["663"]
+  },
+  "pd9702":{
+    "owner": "pd9702",
+    ".ois":{
+      "owner": "pd9702",
+      ".config":{
+        "owner": "pd9702",
+        "is_dri":{ "type": "int", "ver": "1",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}
+

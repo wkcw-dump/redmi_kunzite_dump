@@ -1,0 +1,18 @@
+{
+	"Type":"EffectCategory",
+	"TrueSight":
+	[
+		{
+			"ExtraOptionPath":"0_ExtraOption/mode_rear_portrait.json"
+		},
+		{
+			"ConfigurePath":"20_FaceRetouch/mode_rear_foggy.json",
+			"Index":20
+		},
+		{
+			"ConfigurePath":"70_FacialRefine/mode_front.json",
+			"Index":70
+		}
+		
+	]
+}
