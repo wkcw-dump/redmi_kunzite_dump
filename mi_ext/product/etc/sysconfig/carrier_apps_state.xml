@@ -1,0 +1,3 @@
+<config>
+  <system-app-default-state package="com.dti.aone" enabled="false" />
+</config>
