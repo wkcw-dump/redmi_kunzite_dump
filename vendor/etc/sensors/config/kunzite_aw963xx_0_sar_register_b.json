@@ -1,0 +1,45 @@
+{
+	"config":{
+		"hw_platform": ["QRD"],
+		"soc_id":["663"]
+	},
+	"aw963xx_0_sar":{
+		"owner": "sns_aw963xx",
+		".register_b":{
+			"owner": "sns_aw963xx",
+			"check_sum": { "type": "int", "ver": "0",
+			"data": "0xE6A0C86A"
+			},
+			"reg_0x05AC":{ "type": "int", "ver": "0", "data": "0x05AC"},
+			"reg_0x05AC_val":{ "type": "int", "ver": "0", "data": "0x000F4240"},
+			"reg_0x06A8":{ "type": "int", "ver": "0", "data": "0x06A8"},
+			"reg_0x06A8_val":{ "type": "int", "ver": "0", "data": "0xE2C20400"},
+			"reg_0x06C4":{ "type": "int", "ver": "0", "data": "0x06C4"},
+			"reg_0x06C4_val":{ "type": "int", "ver": "0", "data": "0x000F4240"},
+			"reg_0x0184":{ "type": "int", "ver": "0", "data": "0x0184"},
+			"reg_0x0184_val":{ "type": "int", "ver": "0", "data": "0x01400CC0"},
+			"reg_0x029C":{ "type": "int", "ver": "0", "data": "0x029C"},
+			"reg_0x029C_val":{ "type": "int", "ver": "0", "data": "0x01400CC0"},
+			"reg_0x03B4":{ "type": "int", "ver": "0", "data": "0x03B4"},
+			"reg_0x03B4_val":{ "type": "int", "ver": "0", "data": "0x01400CC0"},
+			"reg_0x04CC":{ "type": "int", "ver": "0", "data": "0x04CC"},
+			"reg_0x04CC_val":{ "type": "int", "ver": "0", "data": "0x00000CC0"},
+			"reg_0x05E4":{ "type": "int", "ver": "0", "data": "0x05E4"},
+			"reg_0x05E4_val":{ "type": "int", "ver": "0", "data": "0x00000CC0"},
+			"reg_0x1108":{ "type": "int", "ver": "0", "data": "0x1108"},
+			"reg_0x1108_val":{ "type": "int", "ver": "0", "data": "0x00000007"},
+			"reg_0x1194":{ "type": "int", "ver": "0", "data": "0x1194"},
+			"reg_0x1194_val":{ "type": "int", "ver": "0", "data": "0x00000007"},
+			"reg_0x1220":{ "type": "int", "ver": "0", "data": "0x1220"},
+			"reg_0x1220_val":{ "type": "int", "ver": "0", "data": "0x00000007"},
+			"reg_0x12AC":{ "type": "int", "ver": "0", "data": "0x12AC"},
+			"reg_0x12AC_val":{ "type": "int", "ver": "0", "data": "0x00000007"},
+			"reg_0x1338":{ "type": "int", "ver": "0", "data": "0x1338"},
+			"reg_0x1338_val":{ "type": "int", "ver": "0", "data": "0x00000007"},
+			"reg_0x13C4":{ "type": "int", "ver": "0", "data": "0x13C4"},
+			"reg_0x13C4_val":{ "type": "int", "ver": "0", "data": "0x00000007"},
+			"reg_0xF084":{ "type": "int", "ver": "0", "data": "0xF084"},
+			"reg_0xF084_val":{ "type": "int", "ver": "0", "data": "0x00000000"}
+		}
+	}
+}

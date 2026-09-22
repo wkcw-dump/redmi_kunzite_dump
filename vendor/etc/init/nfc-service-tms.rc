@@ -1,0 +1,25 @@
+service nfc_hal_service.tms.aidl /vendor/bin/hw/android.hardware.nfc-service-tms
+    class hal
+    user nfc
+    group nfc
+    disabled
+
+on post-fs-data && property:ro.boot.product.hardware.sku=rgl
+    start nfc_hal_service.tms.aidl
+
+on post-fs-data && property:ro.boot.product.hardware.sku=rgl_ss
+    start nfc_hal_service.tms.aidl
+
+on post-fs-data && property:ro.boot.product.hardware.sku=rsa
+    start nfc_hal_service.tms.aidl
+
+on post-fs-data && property:ro.boot.product.hardware.sku=rsa_ss
+    start nfc_hal_service.tms.aidl
+
+on post-fs-data && property:ro.boot.product.hardware.sku=pgl
+    start nfc_hal_service.tms.aidl
+
+on post-fs-data && property:ro.boot.product.hardware.sku=pgl_ss
+    start nfc_hal_service.tms.aidl
+
+

@@ -1,0 +1,23 @@
+on boot
+    chmod 0644 /data/vendor/charge_logger/charge_logger_a.csv
+    chown system system /data/vendor/charge_logger/charge_logger_a.csv
+
+# add for sar nv
+on post-fs-data
+   write  /mnt/vendor/persist/rfs/msm/mpss/00029619 ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00029619
+   write  /mnt/vendor/persist/rfs/msm/mpss/00030007 ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00030007
+   write  /mnt/vendor/persist/rfs/msm/mpss/00029624 ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00029624
+   chmod  0707 /mnt/vendor/persist/rfs
+   chmod  0707 /mnt/vendor/persist/rfs/msm
+   chmod  0707 /mnt/vendor/persist/rfs/msm/mpss
+
+on post-fs-data
+    # add for gsort
+    chmod 0666 /sys/class/qvga/qvga/rear_qvga
+
+on property:sys.boot_completed=1
+    # add for otgrevert
+    chmod  0666 /sys/class/qcom-battery/source

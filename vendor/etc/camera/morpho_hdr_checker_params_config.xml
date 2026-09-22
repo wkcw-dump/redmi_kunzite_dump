@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HdrChecker>
+	<version   type="string" length="1">v1.0.0_default_20250709</version>
+
+    <!-- 设置切换到LLHDR检测灵敏度的阈值,满足三个条件之一就会切换 
+        1. 当前场景ISO >= lowlight_threshold_iso
+        2. 当前场景lux_index <= lowlight_threshold_lux_index
+        3. 当前场景ISO * exposure >= lowlight_threshold_iso * lowlight_threshold_exposure
+        注：lowlight_threshold_iso、lowlight_threshold_exposure设为0，lowlight_threshold_lux_index设为999999相当于关闭对应条件的检测
+    -->
+    <lowlight_threshold>
+        <lowlight_threshold_iso          type="int" rang="[0,-]"       default="0"      length="1">130</lowlight_threshold_iso>
+        <lowlight_threshold_exposure     type="int" rang="[0,-]"       default="0"      length="1">0</lowlight_threshold_exposure>
+        <lowlight_threshold_lux_index    type="int" rang="[-,999999]"  default="999999" length="1">999999</lowlight_threshold_lux_index>
+    </lowlight_threshold>
+
+    <!-- 配置检测灵敏度，灵敏度越高，计算出来的hdr_confidence越高，hdr_confidence越高越认为是高动态场景 -->
+    <sensitivity_params>
+        <!-- 若当前场景的 hdr_confidence >= hdr_confidence_thres, 视为高动态场景（HDR\LLHDR)  -->
+        <hdr_confidence_thres      type="int" rang="[0,255]"     default="150" length="1">140</hdr_confidence_thres>
+        
+        <!-- 设置HDR检测灵敏度 -->
+        <!-- <default_black             type="int" rang="[-100,100]"  default="-40" length="1">-40</default_black> -->
+        <!-- <default_dark              type="int" rang="[-100,100]"  default="-40" length="1">-40</default_dark> -->
+        <default_bright            type="int" rang="[-100,100]"  default="-20" length="1">-50</default_bright>
+        <default_white             type="int" rang="[-100,100]"  default="0" length="1">90</default_white>
+
+        <!-- 设置LLHDR检测灵敏度 -->
+        <!-- <lowlight_black            type="int" rang="[-100,100]"  default="-100" length="1">100</lowlight_black> -->
+        <!-- <lowlight_dark             type="int" rang="[-100,100]"  default="-100" length="1">100</lowlight_dark> -->
+        <lowlight_bright           type="int" rang="[-100,100]"  default="60"   length="1">-50</lowlight_bright>
+        <lowlight_white            type="int" rang="[-100,100]"  default="80"   length="1">99</lowlight_white>
+        
+        <!-- 设置前摄有人脸HDR检测灵敏度 -->
+        <!-- <front_black               type="int" rang="[-100,100]"  default="-100" length="1">-100</front_black> -->
+        <!-- <front_dark                type="int" rang="[-100,100]"  default="-100" length="1">-100</front_dark> -->
+        <front_bright              type="int" rang="[-100,100]"  default="-10"  length="1">-60</front_bright>
+        <front_white               type="int" rang="[-100,100]"  default="10"   length="1">90</front_white>
+    </sensitivity_params>      
+
+    <!-- 配置非高动态场景走MFNR算法的情况下不同ISO段的ev0帧数 -->
+    <mfnr_frame_config>
+    	<iso value="100">
+            <ev0_frame  type="int" rang="[0,8]"  default="4" length="1">4</ev0_frame>
+        </iso>
+        <iso value="400">
+            <ev0_frame  type="int" rang="[0,8]"  default="5" length="1">5</ev0_frame>
+        </iso>
+        <iso value="1200">
+            <ev0_frame  type="int" rang="[0,8]"  default="6" length="1">6</ev0_frame>
+        </iso>
+        <iso value="999999">
+            <ev0_frame  type="int" rang="[0,8]"  default="6" length="1">6</ev0_frame>
+        </iso>			
+    </mfnr_frame_config>  
+
+    <!-- 配置高动态场景（HDR/LLHDR)下不同ISO段的ev0帧数 -->
+    <hdr_ev0_frame_config>
+        <iso value="90000">
+            <ev0_frame  type="int" rang="[0,8]"  default="1" length="1">1</ev0_frame>
+        </iso>
+        <iso value="99999">
+            <ev0_frame  type="int" rang="[0,8]"  default="4" length="1">4</ev0_frame>
+        </iso>
+        <iso value="999999">
+            <ev0_frame  type="int" rang="[0,8]"  default="5" length="1">5</ev0_frame>
+        </iso>
+    </hdr_ev0_frame_config>   
+
+</HdrChecker>

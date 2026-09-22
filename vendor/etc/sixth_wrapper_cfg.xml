@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sixth_wrapper_config>
+    <config_element name="sipa_ctl_prefix" left_ctl="SpkrLeft" right_ctl="SpkrRight" description="sipa ctrl name prefix"/>
+    <config_element name="hpf" enable="0" frq1="109" frq2="53" chiptype1="9" chiptype2="10" 
+        description="set hpf feq"/>
+    <config_element name="vdd" enable="1" battery_node="/sys/devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,battery_charger/power_supply/battery/voltage_now"
+        vdd_step="10000" description="read vdd and set ad_hoc gain, vdd_step(mv)">
+        <value_map threshold="3700000" ratio_value ="100,100" description="ad_hoc ratio"/>
+        <value_map threshold="3600000" ratio_value ="90,90" description="ad_hoc ratio"/>
+        <value_map threshold="3500000" ratio_value ="85,85" description="ad_hoc ratio"/>
+        <value_map threshold="3400000" ratio_value ="80,80" description="ad_hoc ratio"/>
+        <value_map threshold="3300000" ratio_value ="75,75" description="ad_hoc ratio"/>
+        <value_map threshold="3200000" ratio_value ="70,70" description="ad_hoc ratio"/>
+        <value_map threshold="3100000" ratio_value ="65,65" description="ad_hoc ratio"/>
+        <value_map threshold="3000000" ratio_value ="60,60" description="ad_hoc ratio"/>
+        <value_map threshold="2900000" ratio_value ="55,55" description="ad_hoc ratio"/>
+        <value_map threshold="2800000" ratio_value ="50,50" description="ad_hoc ratio"/>
+        <value_map threshold="0" ratio_value ="45,45" description="ad_hoc ratio"/>
+
+    </config_element> 
+	<config_element name="temperature" enable="1" temp_node="/sys/class/power_supply/battery/temp"
+        temp_step="30" description="read temp and set ad_hoc gain, temp_step(m℃)">
+        <value_map threshold="10"   coeff ="100,100" description="low temperature scene ratio coefficient"/>
+        <value_map threshold="-100" coeff ="75,75" description="low temperature scene ratio coefficient"/>
+        <value_map threshold="-200" coeff ="65,65" description="low temperature scene ratio coefficient"/>
+        <value_map threshold="-500" coeff ="50,50" description="low temperature scene ratio coefficient"/>
+    </config_element>
+    <config_element name="voice_volume_limit" ch0_ratio="100" ch1_ratio="100" description="voice volume limit ratio set"/>
+    <config_element name="channel" num="2" description="set ch num"/>
+    <config_element name="timer_cfg" enable="1" description="enable timer"/>
+    <config_element name="lp_protect_cfg" enable="0" description="turn on/off interval set lp value"/>
+    <config_element name="algo_val_set" enable="0" description="set algo param, eg, r0, f0"/>
+    <config_element name="lp_set" enable="0" description="Is init lp value"/>
+</sixth_wrapper_config>

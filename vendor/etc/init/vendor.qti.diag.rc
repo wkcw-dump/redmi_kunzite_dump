@@ -1,0 +1,31 @@
+#
+# Copyright (c) 2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+
+on early-boot
+    # ADD: QDSS permission
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etf/curr_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etf/enable_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr/curr_sink
+    chown root oem_2901 /sys/bus/coresight/devices/coresight-tmc-etr/enable_sink
+    chown root oem_2901 /sys/bus/coresight/devices/coresight-tmc-etr/out_mode
+    chown system system /sys/bus/coresight/devices/coresight-stm/enable
+    chown root oem_2901 /sys/bus/coresight/devices/coresight-stm/enable_source
+    chown system system /sys/bus/coresight/devices/coresight-stm/hwevent_enable
+    chown system system /sys/bus/coresight/devices/coresight-swao-csr/timestamp
+    chown root oem_2901 /sys/bus/coresight/devices/coresight-modem-diag/enable_source
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr1/enable_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr1/out_mode
+    # END QDSS permission
+    start vendor.diag-router
+
+service vendor.diag-router /vendor/bin/diag-router
+    class hal
+    user system
+    group system
+    capabilities KILL
+    disabled
+

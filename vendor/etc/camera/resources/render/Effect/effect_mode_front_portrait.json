@@ -1,0 +1,13 @@
+{
+	"Type":"EffectCategory",
+	"TrueSight":
+	[
+		{
+			"ExtraOptionPath":"0_ExtraOption/mode_front_portrait.json"
+		},
+		{
+			"ConfigurePath":"20_FaceRetouch/mode_front.json",
+			"Index":20
+		}
+	]
+}

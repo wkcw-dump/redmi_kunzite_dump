@@ -1,0 +1,29 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD"],
+    "soc_id": ["663"]
+  },
+  "aw86033a":{
+    "owner": "aw86033a",
+    ".ois":{
+      "owner": "aw86033a",
+      ".config":{
+        "owner": "aw86033a",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}
+
